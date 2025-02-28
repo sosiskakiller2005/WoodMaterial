@@ -133,6 +133,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="Resources\Fonts\Inter.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -148,12 +149,12 @@
       <DependentUpon>WoodMaterialModel.edmx</DependentUpon>
       <LastGenOutput>WoodMaterialModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\лого 1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="Views\Pages\" />
   </ItemGroup>
   <ItemGroup>

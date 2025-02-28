@@ -23,5 +23,20 @@ namespace WoodMaterial.Views.Windows
         {
             InitializeComponent();
         }
+
+        private void EntryBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ForgotPasswordHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SignUpHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoodMaterial.Views.Windows"
         mc:Ignorable="d"
-        Title="AuthorisationWindow" Height="450" Width="800">
-    <Grid>
+        Title="AuthorisationWindow" Height="700" Width="1200">
+    <StackPanel>
+        <Border Height="20"/>
+        <Image Source="/Resources/лого 1.png" Width="150" Height="150"/>
+        <Border Height="20"/>
+        <TextBlock Text="Авторизация" FontSize="40"/>
+        <Border Height="20"/>
+        <TextBox Name="LoginTb"/>
+        <Border Height="20"/>
+        <PasswordBox Name="PasswordTb"/>
+        <Border Height="20"/>
+        <CheckBox Name="RememberMeCb" Content="Запомнить меня"/>
+        <Button Name="EntryBtn" Content="ВОЙТИ" Click="EntryBtn_Click"/>
+        <TextBlock><Hyperlink Name="ForgotPasswordHl" Click="ForgotPasswordHl_Click">Забыли пароль?</Hyperlink></TextBlock>
+        <Border Height="150"/>
+        <TextBlock><Hyperlink Name="SignUpHl" Click="SignUpHl_Click">Зарегистрироваться</Hyperlink></TextBlock>
         
-    </Grid>
+    </StackPanel>
 </Window>
