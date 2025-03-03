@@ -72,6 +72,12 @@
     <Compile Include="Views\Windows\AuthorisationWindow.xaml.cs">
       <DependentUpon>AuthorisationWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\ClientsWindow.xaml.cs">
+      <DependentUpon>ClientsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\SignUpWindow.xaml.cs">
+      <DependentUpon>SignUpWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Client.cs">
@@ -162,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Styles\CheckBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\ComboBoxStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -199,6 +209,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Windows\AuthorisationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ClientsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\SignUpWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

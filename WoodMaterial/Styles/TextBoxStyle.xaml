@@ -11,7 +11,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="TextBox">
-                    <Border Background="#ADA2A2" CornerRadius="13" BorderThickness="1" BorderBrush="Black">
+                    <Border Background="White" CornerRadius="13" BorderThickness="1" BorderBrush="#364750">
                         <ScrollViewer x:Name="PART_ContentHost" Margin="5" VerticalAlignment="Center" />
                     </Border>
                 </ControlTemplate>

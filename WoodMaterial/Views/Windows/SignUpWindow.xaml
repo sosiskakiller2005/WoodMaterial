@@ -1,32 +1,34 @@
-﻿<Window x:Class="WoodMaterial.Views.Windows.AuthorisationWindow"
+﻿<Window x:Class="WoodMaterial.Views.Windows.SignUpWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoodMaterial.Views.Windows"
         mc:Ignorable="d"
-        Title="Окно авторизации" Height="700" Width="1200"
+        Title="AuthorisationWindow" Height="750" Width="1200"
         WindowStartupLocation="CenterScreen">
     <StackPanel>
         <Border Height="20"/>
         <Image Source="/Resources/лого 1.png" Width="150" Height="150"/>
         <Border Height="20"/>
-        <TextBlock Text="Авторизация" FontSize="40"/>
+        <TextBlock Text="Регистрация" FontSize="40"/>
         <Border Height="20"/>
         <TextBox Name="LoginTb" Text="Введите логин" GotFocus="LoginTb_GotFocus" LostFocus="LoginTb_LostFocus"/>
         <Border Height="20"/>
         <PasswordBox Name="PasswordTb" Password="Введите пароль" GotFocus="PasswordTb_GotFocus" LostFocus="PasswordTb_LostFocus"/>
         <Border Height="20"/>
+        <PasswordBox Name="RepeatPasswordTb" Password="Введите пароль" GotFocus="RepeatPasswordTb_GotFocus" LostFocus="RepeatPasswordTb_LostFocus"/>
+        <Border Height="20"/>
         <CheckBox Name="RememberMeCb" Content="Запомнить меня"/>
         <Border Height="20"/>
-        <Button Name="EntryBtn" Click="EntryBtn_Click">
+        <Button Name="EntryBtn" Click="EntryBtn_Click" Width="290">
             <Button.Content>
-                <TextBlock Text="ВОЙТИ" Foreground="White"/>
+                <TextBlock Text="ЗАРЕГИСТРИРОВАТЬСЯ" Foreground="White"/>
             </Button.Content>
         </Button>
         <TextBlock><Hyperlink Name="ForgotPasswordHl" Click="ForgotPasswordHl_Click">Забыли пароль?</Hyperlink></TextBlock>
         <Border Height="150"/>
-        <TextBlock><Hyperlink Name="SignUpHl" Click="SignUpHl_Click">Зарегистрироваться</Hyperlink></TextBlock>
-        
+        <TextBlock><Hyperlink Name="AuthoriseHl" Click="AuthoriseHl_Click">Авторизоваться</Hyperlink></TextBlock>
+
     </StackPanel>
 </Window>

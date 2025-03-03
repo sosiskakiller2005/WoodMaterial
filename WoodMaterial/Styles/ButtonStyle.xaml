@@ -3,18 +3,19 @@
     <Style TargetType="Button">
         <Setter Property="FontSize" Value="25" />
         <Setter Property="Foreground" Value="White" />
-        <Setter Property="Width" Value="200" />
-        <Setter Property="Height" Value="50" />
+        <Setter Property="Width" Value="240" />
+        <Setter Property="Height" Value="40" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="Black" 
+                    <Border Background="#364750" 
                             BorderBrush="Transparent"
                             BorderThickness="1" 
                             CornerRadius="10" 
                             Padding="5">
                         <ContentPresenter HorizontalAlignment="Center" 
-                                          VerticalAlignment="Center" />
+                                          VerticalAlignment="Center"
+                                          TextElement.Foreground="White" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -35,7 +36,8 @@
                             CornerRadius="10" 
                             Padding="5">
                         <ContentPresenter HorizontalAlignment="Center" 
-                                          VerticalAlignment="Center" />
+                                          VerticalAlignment="Center"
+                                          TextElement.Foreground="White" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -56,11 +58,11 @@
                             CornerRadius="10" 
                             Padding="5">
                         <ContentPresenter HorizontalAlignment="Center" 
-                                          VerticalAlignment="Center" />
+                                          VerticalAlignment="Center"
+                                          TextElement.Foreground="White" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>
