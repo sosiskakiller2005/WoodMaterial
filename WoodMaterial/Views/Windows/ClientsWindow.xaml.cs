@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WoodMaterial.Model;
 
 namespace WoodMaterial.Views.Windows
 {
@@ -19,9 +20,51 @@ namespace WoodMaterial.Views.Windows
     /// </summary>
     public partial class ClientsWindow : Window
     {
+        private WoodMaterialDbEntities _context = App.GetContext();
         public ClientsWindow()
         {
             InitializeComponent();
+            ClientsDg.ItemsSource = _context.Client.ToList();
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EditBTn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FilterBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AmountBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RefreshBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ClientsDg_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            AddEditClientWindow addEditClientWindow = new AddEditClientWindow(ClientsDg.SelectedItem as Client);
+            addEditClientWindow.ShowDialog();
+            if (addEditClientWindow.DialogResult == true)
+            {
+                ClientsDg.ItemsSource = App.GetContext().Client.ToList();
+            }
         }
     }
 }

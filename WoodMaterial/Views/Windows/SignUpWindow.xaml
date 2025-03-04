@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoodMaterial.Views.Windows"
         mc:Ignorable="d"
-        Title="AuthorisationWindow" Height="750" Width="1200"
+        Title="Окно регистрации" Height="750" Width="1200"
         WindowStartupLocation="CenterScreen">
     <StackPanel>
         <Border Height="20"/>

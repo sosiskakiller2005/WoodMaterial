@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoodMaterial.Views.Windows"
         mc:Ignorable="d"
-        Title="ClientsWindow" Height="450" Width="800">
+        Title="WoodMaterial" Height="750" Width="1200"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".2*" />
+            <RowDefinition Height=".1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Image Source="/Resources/лого 1.png" Margin="10"/>
+            <TextBlock Text="Наши клиенты" FontSize="30"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Name="AddBtn" Content="Добавить" Click="AddBtn_Click" Style="{StaticResource menuBtn}"/>
+            <Button Name="EditBTn" Content="Изменить" Click="EditBTn_Click" Style="{StaticResource menuBtn}"/>
+            <Button Name="DeleteBtn" Content="Удалить" Click="DeleteBtn_Click" Style="{StaticResource menuBtn}"/>
+            <Button Name="FilterBtn" Content="Фильтр" Click="FilterBtn_Click" Style="{StaticResource menuBtn}"/>
+            <Button Name="AmountBtn" Content="Кол-во" Click="AmountBtn_Click" Style="{StaticResource menuBtn}"/>
+            <Button Name="RefreshBtn" Content="Обновить" Click="RefreshBtn_Click" Style="{StaticResource menuBtn}"/>
+        </StackPanel>
+
+        <DataGrid Name="ClientsDg" Grid.Row="3" MouseDoubleClick="ClientsDg_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата регистр." Binding="{Binding DateOfRegistration, StringFormat={}{0:dd.MM.yy}}"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Adress}" Width="320"/>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding Fullname}"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="120"/>
+                <DataGridTextColumn Header="Когда напомнить" Binding="{Binding WhenToRemind}"/>
+                <DataGridTextColumn Header="О чем напомнить" Binding="{Binding WhatToRemind}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
