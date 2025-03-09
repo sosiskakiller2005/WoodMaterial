@@ -29,7 +29,12 @@ namespace WoodMaterial.Views.Windows
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            AddEditClientWindow addEditClientWindow = new AddEditClientWindow();
+            addEditClientWindow.ShowDialog();
+            if (addEditClientWindow.DialogResult == true)
+            {
+                ClientsDg.ItemsSource = App.GetContext().Client.ToList();
+            }
         }
 
         private void EditBTn_Click(object sender, RoutedEventArgs e)

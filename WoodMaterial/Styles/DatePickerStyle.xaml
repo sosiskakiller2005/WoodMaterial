@@ -10,7 +10,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="DatePicker">
                     <Grid>
-                        <Border Background="{TemplateBinding Background}" 
+                        <Border Background="{TemplateBinding Background}" Padding="10 0"
                                 BorderBrush="#364750" 
                                 BorderThickness="{TemplateBinding BorderThickness}" 
                                 CornerRadius="13">

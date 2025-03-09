@@ -26,7 +26,6 @@
                 <TextBlock Text="ЗАРЕГИСТРИРОВАТЬСЯ" Foreground="White"/>
             </Button.Content>
         </Button>
-        <TextBlock><Hyperlink Name="ForgotPasswordHl" Click="ForgotPasswordHl_Click">Забыли пароль?</Hyperlink></TextBlock>
         <Border Height="150"/>
         <TextBlock><Hyperlink Name="AuthoriseHl" Click="AuthoriseHl_Click">Авторизоваться</Hyperlink></TextBlock>
 

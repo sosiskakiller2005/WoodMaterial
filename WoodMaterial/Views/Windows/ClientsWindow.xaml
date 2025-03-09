@@ -35,7 +35,7 @@
                 <DataGridTextColumn Header="Адрес" Binding="{Binding Adress}" Width="320"/>
                 <DataGridTextColumn Header="ФИО" Binding="{Binding Fullname}"/>
                 <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="120"/>
-                <DataGridTextColumn Header="Когда напомнить" Binding="{Binding WhenToRemind}"/>
+                <DataGridTextColumn Header="Когда напомнить" Binding="{Binding WhenToRemind, StringFormat={}{0:dd.MM.yy}}"/>
                 <DataGridTextColumn Header="О чем напомнить" Binding="{Binding WhatToRemind}"/>
             </DataGrid.Columns>
         </DataGrid>
